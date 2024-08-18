@@ -1,0 +1,99 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #83a4d4, #b6fbff);
+}
+
+/* Stopwatch Container */
+#stopwatch-container {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 50px;
+    text-align: center;
+    width: 90%;
+    max-width: 800px;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Display Area */
+#display {
+    font-size: 5em;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+/* Control Buttons */
+.control-button {
+    background: #4CAF50;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 1.5em;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 22%;
+    min-width: 150px;
+}
+
+.control-button:hover {
+    background-color: #45a049;
+}
+
+/* Pause and Reset Button Colors */
+#pause {
+    background: #f39c12;
+}
+
+#pause:hover {
+    background-color: #e67e22;
+}
+
+#reset {
+    background: #e74c3c;
+}
+
+#reset:hover {
+    background-color: #c0392b;
+}
+
+/* Lap Button Color */
+#lap {
+    background: #3498db;
+}
+
+#lap:hover {
+    background-color: #2980b9;
+}
+
+/* Lap List */
+#laps {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+    max-height: 40vh;
+    overflow-y: auto;
+}
+
+#laps li {
+    background: rgba(255, 255, 255, 0.1);
+    color: #0f0000;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
